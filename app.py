@@ -13,7 +13,7 @@ PASSWORD = os.getenv('PASSWORD')
 class Unfollow(object):
 
 	def __init__(self, unfollow):
-		self.session = InstaPy(username=USERNAME, password=PASSWORD, headless_browser=False)
+		self.session = InstaPy(username=USERNAME, password=PASSWORD, headless_browser=True)
 		self.usersToUnfollow = self.load(unfollow)
 		
 	
